@@ -12,9 +12,7 @@ import org.koin.dsl.module
 **/
 
 /**
-* @내용 : Repository 타입으로 선언되어 있으므로
- *        이미 생성된 객체 중 Repository 타입에 알맞은 객체를 Koin이 주입해줍니다
-* @작성자 : 이재선
+* Repository 타입으로 선언되어 있으므로 이미 생성된 객체 중 Repository 타입에 알맞은 객체를 Koin이 주입해줍니다
 **/
 val appModule = module {
     single { Repository() }
@@ -22,9 +20,11 @@ val appModule = module {
 }
 
 /**
-* @내용 : ViewModel의 경우 viewModel 키워드로 선언해야 합니다
-* @작성자 : 이재선
+* ViewModel의 경우 viewModel 키워드로 선언해야 합니다
 **/
 val viewModelModule = module {
     viewModel { MainViewModel() }
 }
+
+
+val moduleList = listOf(appModule, viewModelModule)
