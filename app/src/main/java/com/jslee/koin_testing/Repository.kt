@@ -1,5 +1,5 @@
 package com.jslee.koin_testing
 
 class Repository {
-    val sampleData = "Sample Data!"
+    val firstData = "This is my first Data!"
 }
