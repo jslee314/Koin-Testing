@@ -45,7 +45,6 @@ dependencies {
 
     // for 코틀린 app
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
-
     // for 테스트
     testImplementation "org.koin:koin-test:$koin_version"
 
